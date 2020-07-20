@@ -5,7 +5,7 @@ import Track from '../Track/Track';
 
 class TrackList extends React.Component {
     render() {
-        let tracksArray = Array.from(this.props.tracks);
+        let tracksArray = this.props.tracks?Array.from(this.props.tracks):[];
         return (
             <div className="TrackList">
                 {tracksArray.map
