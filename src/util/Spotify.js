@@ -4,6 +4,8 @@ let accessToken = '';
 let expiresIn = '';
 var client_id = 'baf26983f8564dce9393d1eb5ad74749'; // Your client id
 var redirect_uri = "http://localhost:3000/"; // Your redirect uri
+console.log('env');
+console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV==='production'){
     redirect_uri = "https://benjiedavis.github.io/jammming/"
 };
